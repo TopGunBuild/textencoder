@@ -24,20 +24,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TopGunBuild/topgun-webcrypto.git"
+        "url": "git+https://github.com/TopGunBuild/topgun-textencoder.git"
     },
     "keywords": [
         "isomoprhic",
-        "webcrypto",
+        "decode",
+        "encode",
         "browser",
         "node"
     ],
     "author": "Ivan Kalashnik",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/TopGunBuild/topgun-webcrypto/issues"
+        "url": "https://github.com/TopGunBuild/topgun-textencoder/issues"
     },
-    "homepage": "https://github.com/TopGunBuild/topgun-webcrypto#readme",
+    "homepage": "https://github.com/TopGunBuild/topgun-textencoder#readme",
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/commit-analyzer": "^9.0.2",
