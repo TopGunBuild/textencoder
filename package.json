@@ -1,6 +1,6 @@
 {
     "name": "topgun-textencoder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An isomorphic encode/decode Uint8Arrays to strings for Javascript in Node and the browser",
     "publishConfig": {
         "access": "public"
