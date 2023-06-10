@@ -53,8 +53,21 @@
             "single"
         ],
         "brace-style": [
-            2,
+            "error",
             "allman"
-        ]
+        ],
+        "key-spacing": [2, {
+            "singleLine": {
+                "beforeColon": false,
+                "afterColon": true
+            },
+            "multiLine": {
+                "beforeColon": false,
+                "afterColon": true,
+                "align": "colon"
+            }
+        }],
+        "indent": "off",
+        "@typescript-eslint/indent": [2, 4, {"VariableDeclarator": "first"}]
     }
 }
