@@ -23,7 +23,9 @@ This is just a thin wrapper that provides an isomorphic API.
 
 ## Install
 
-`npm install @topgunbuild/textencoder`
+```bash
+npm install @topgunbuild/textencoder
+```
 
 ## Usage
 
