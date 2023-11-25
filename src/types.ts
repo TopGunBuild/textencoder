@@ -1,4 +1,3 @@
-export interface ITextEncoder {
-    encode(input: string): Uint8Array;
-    decode(input: ArrayBuffer): string;
-}
+export type Encode = (input: string) => Uint8Array;
+export type Decode = (input: ArrayBuffer) => string;
+

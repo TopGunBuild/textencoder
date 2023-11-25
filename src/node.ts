@@ -1,8 +1,4 @@
-import { ITextEncoder } from './types';
+import { Encode, Decode } from './types';
 
-const textEncoder: ITextEncoder = {
-    encode: (input: string) => new Uint8Array(Buffer.from(input, 'utf8')),
-    decode: (input: ArrayBuffer) => Buffer.from(input).toString('utf8'),
-};
-
-export default textEncoder;
+export const encode: Encode = (input: string) => new Uint8Array(Buffer.from(input, 'utf8'));
+export const decode: Decode = (input: ArrayBuffer) => Buffer.from(input).toString('utf8');
