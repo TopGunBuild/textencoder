@@ -1,12 +1,12 @@
-import {encode as nodeEncode, decode as nodeDecode} from '../src/node';
-import {encode as browserEncode, decode as browserDecode } from '../src/browser';
+import nodeTextEncoder from '../src/node';
+import browserTextEncoder from '../src/browser';
 
 describe('TextEncoder', () => {
     it('decode', async () => {
-        const node = nodeDecode(
+        const node = nodeTextEncoder.decode(
             new Uint8Array([72, 101, 108, 108, 111]),
         );
-        const browser = browserDecode(
+        const browser = browserTextEncoder.decode(
             new Uint8Array([72, 101, 108, 108, 111]),
         );
         expect(node).toEqual('Hello');
@@ -14,8 +14,8 @@ describe('TextEncoder', () => {
     });
 
     it('encode', async () => {
-        const node = nodeEncode('Hello');
-        const browser = browserEncode('Hello');
+        const node = nodeTextEncoder.encode('Hello');
+        const browser = nodeTextEncoder.encode('Hello');
         expect(node).toEqual(new Uint8Array([72, 101, 108, 108, 111]));
         expect(browser).toEqual(new Uint8Array([72, 101, 108, 108, 111]));
     });

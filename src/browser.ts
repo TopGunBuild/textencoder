@@ -1,5 +1,8 @@
-import { Encode, Decode } from './types';
+import { ITextEncoder } from './types';
 
-export const encode: Encode = (input: string): Uint8Array => new TextEncoder().encode(input);
-export const decode: Decode = (input: ArrayBuffer): string => new TextDecoder().decode(input);
+const textEncoder: ITextEncoder = {
+    encode: (input: string): Uint8Array => new TextEncoder().encode(input),
+    decode: (input: ArrayBuffer): string => new TextDecoder().decode(input),
+};
 
+export default textEncoder;
